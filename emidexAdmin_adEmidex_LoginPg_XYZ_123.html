@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Emidex Admin Login</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="Emidex Website" name="keywords">
+  <meta content="Emidex Company" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!--put in my w3css ,"cursive","sans-serif"-->
+    <link rel="stylesheet" href="css/w3.css"/>
+    <style>
+      .w3-myfont {
+        font-family: "Comic Sans MS" ;
+      }
+
+      .w3-custom-purple {
+        background: #6a41ed;
+      }
+    </style>
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="w3-myfont">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" class="w3-black">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto w3-myfont">Emidex Logistics <span class="icon-aircraft-take-off"></span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html#intro">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li><!--link to AboutUs Page when You Get Here-->
+          <li><a href="index.html#services">Services</a></li> <!--link to Services Page when You Get Here-->
+          <li><a href="index.html#quotes">Prices & Quotes</a></li><!--Link to Our Offerings Page when You are done -->
+          <li><a href="index.html#call-to-action">Locate Us</a></li>
+          <li><a href="index.html#track">Track</a></li><!--Link to Our Portfolio Page when You Get Here -->
+          <li><a href="index.html#contact">Contact</a></li>
+           <!--link to Team Page when you get Here-->
+          <li class="menu-has-children"><a href="#">More</a>
+            <ul>
+             <li><a href="index.html#skills">Skills</a></li>
+              <li><a href="index.html#facts">Facts</a></li>
+              <li><a href="index.html#team">Our Team</a></li>
+              <li><a href="news.html">News</a></li>
+              <li><a href="disclaimer.html">Disclaimer</a></li>
+              
+            </ul>
+          </li>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header --><br/>
+
+  <main class="w3-container" id="main">
+    <br/>
+      <section class="loginPage" id="contact">
+        <div class=" wow pulse w3-center w3-container w3-padding">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4 w3-center w3-padding w3-card-4 w3-round-xxlarge">
+            <br/>
+            <div class="w3-border-bottom w3-border-green w3-padding w3-large">
+              <b><span class="w3-circle w3-green icon-profile-female"></span></b>
+              <b>Admin Login here: <br/>
+              <span class="icon-hand"></span> <span class="w3-medium">See you on the other side:</span></b>
+            </div>
+            <br/>
+
+            
+
+              <div class="form">
+
+                <b><div id="errormessage" class="w3-red"></div></b>
+                <form action="" method="" role="" class="contactForm">
+
+                  <div class="form-group">
+                          <input type="text" class="form-control" id="adminName" placeholder="Username" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars for username" />
+                          <!--<span class="icon-eye w3-green" id="hide_show"></span>-->
+                          <div class="w3-text-red" id="validateAdmin"></div>
+                      </div><br/>
+
+                    <div class="w3-container w3-center">
+                      <a href="#" id="pass_show">
+                        <span class="icon-eye w3-xlarge"></span>
+                      </a>
+                      <a href="#" id="pass_hide">
+                        <span class="icon-eye-blocked w3-xlarge"></span>
+                      </a>
+                    </div>
+
+                      <div class="form-group">
+                          <input type="password" class="form-control" id="adminPass" placeholder="Password" required="" required="true" data-rule="minlen:4" data-msg="Please enter at least 4 chars for password" />
+                          <!--<span class="icon-eye w3-green" id="hide_show"></span>-->
+                          <div class="w3-text-red" id="validatePass"></div>
+                      </div><br/>
+
+                      <div class="wow bounceInUp text-center" id="signUp">
+                          <button type="submit" id="login"><b>LogIn</b></button>
+                      </div>
+
+                  <!--<div class="text-center" id="loading">  
+                    <i class="spinner-border w3-text-deep-purple"></i>
+                  </div>-->
+                </form><br/>
+
+                <!--<div class="w3-padding w3-medium">Forgot Password? 
+                  <a href="changePassword.html"><u><i>Change it</i></u></a>
+                </div>-->
+              </div>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+          <!--<div class="w3-center w3-padding w3-medium">
+            <b>
+              Don't have an account? 
+              <a href="signup.html"><u><i>SignUp now</i></u></a>
+            </b>
+          </div>-->
+    </section>
+
+
+
+    <br/><br/><br/><br/><br/>
+    
+    <section class="wow w3-section" id="adminDashboardSkeleton">
+
+      <div class="w3-center w3-border-bottom w3-xxlarge w3-padding"> 
+        <div class="w3-left">
+          <button class="btn btn-primary" id="quote_click" data-toggle="modal" data-target="#set_quote_and_payment">
+            <b>Set Quotes and Payment Details <span class="icon-pricetags"></span></b>
+          </button>
+        </div>
+
+        <div class="w3-right">
+          <span class="w3-circle w3-green icon-profile-female"></span>
+        </div>
+        <b>Welcome Admin</b>
+      </div>
+      <br/>
+
+
+      <!--This is the modal for the quote/price tag:-->
+      <!-- This modal will pop up when view quote button is clicked-->
+                <!-- Modal -->
+                <div class="modal" id="set_quote_and_payment"><!--tabindex="-1" role="dialog" aria-labelledby="action" aria-hidden="true">-->
+                  <div class="modal-page w3-center" role="document"> <!--role="document"-->
+
+                    <div class="modal-content">
+
+                      <div class="w3-center modal-header w3-deep-purple">
+                        <b class="modal-title w3-large" id="exampleModalLabel">
+                         - Search for all User Quotes Reference Codes <br/>
+                         - Use each Quote Reference Code to get specific Quote Details <br/>  
+                         - Update the Price and Payment details of each Quote Details. 
+                        </b>
+                      </div>
+
+                      <div class="modal-body w3-center" id="depositHistory"> 
+                        <br/>
+
+                        <div class="w3-text-red w3-medium" id="price_error"></div>
+                        <div class="w3-text-green w3-medium" id="price_retrieved"></div>
+              
+                        <section class="w3-container">
+
+                          <div class="col-md-6 w3-card-4 w3-padding w3-border w3-round-xxlarge" id="price_quote_body"><br/>
+                          
+                          
+                            <button class="btn btn-primary" id="get_quote_ref">
+                              <b>View All Quote <br/>Reference Codes <span class="icon-eye"></span></b>
+                            </button>
+                            <br/><br/>
+
+                            <div class="w3-text-green w3-large" id="ref_codes_found"></div>
+                            <div class="w3-text-red w3-large" id="ref_codes_error"></div>
+
+                            <p class="w3-center w3-large" id="all_quote_ref"></p>
+
+                          </div>
+
+                          <div class="col-md-6 w3-card-4 w3-padding w3-border w3-round-xlarge" id="price_quote_body"><br/>
+                              <div class="w3-card-4 w3-borderw3-round-xxlarge">
+                                <input type="text" name="quoteRef" class="form-control" id="quoteRefCode" placeholder="Quote Reference Code" data-msg="Cannot be empty" />
+                              </div><br/>
+
+                               <button class="btn btn-primary" id="view_quote_details">
+                                <b>View Quote Details <span class="icon-eye"></span></b>
+                              </button><br/>
+
+                              <div class="w3-text-green w3-large" id="quote_details_success"></div>
+                              <div class="w3-text-red w3-large" id="quote_details_fail"></div>
+
+                              <br/>
+
+                              <p class="w3-container w3-padding w3-margin w3-border w3-round-xxlarge" id="quote_details_disp"></p>
+
+                              <br/>
+
+                              <form id="quoteUpdateForm">
+
+                                <div class="w3-padding w3-margin">
+                                  <b>N.B. - Please, be as much specific as possible for the payment method and the acceptable currencies</b>
+                                </div>
+
+                                <div class="w3-card-4 w3-padding w3-border w3-round-xxlarge" id="detail_update">
+
+                                <div class="w3-large">
+                                  <b>Update/Change Price and Payment data of this user-supplied quote details with quote reference number <span class="w3-large" id="qRef"></span> </b>
+                                </div><br/><br/>
+
+                                <textarea type="text" name="Price" class="form-control" id="quotePriceUpdate" placeholder="New Price (In USD, EUR, BTC, ETH or any other acceptable currency)" data-msg="Cannot be empty"></textarea>
+                                <br/><br/>
+
+                                <textarea type="text" name="PayDetails" class="form-control" id="payDetailsUpdate" placeholder=" New Payment Details ( Account/ Wallet Details ), Payment Methods (Transfer, Wired, In-App, etc) " data-msg="Cannot be empty"></textarea>
+                                <br/><br/>
+
+                                <button type="button" class="btn btn-primary" id="pay_price_update">Update</button>
+
+                                <b><div class="w3-text-red" id="updateParamFail"></div></b>
+                                <b><div class="w3-text-green" id="updateParamSuccess"></div></b>
+                                <br/><br/>
+
+                              </div>
+
+                            </form>
+
+                            <br/><br/>
+
+                          </div>
+
+                        </section><br/><br/>
+
+                        <div class="w3-border-bottom"></div>
+                    
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+      <div class="w3-container w3-center w3-margin">
+
+        <div class="wow fadeInUp col-md-4 w3-border-right" id="genNew">
+          <div class="container w3-card w3-center w3-padding">  
+            <header class="w3-border-bottom w3-padding">
+              <b class="w3-xxlarge">Generate New Codes</b><br/>
+              <b>New tracking codes and reference ID</b><br/><br/>
+              <p class="w3-medium w3-padding w3-border-right w3-border-left w3-border-top w3-border-bottom w3-round-xxlarge">
+                <span class="wow fadeInX">These codes - tracking code and reference ID are linked to the new shipping details set by the admin.</span>
+              </p>
+            </header>
+            <br/>
+
+            <p>
+              <span class="icon-price-ribbon"></span>
+              <b>New Tracking Pin Code</b>
+              <br/>
+              <div id="tracking_code" class="w3-xlarge"></div>
+            </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+            <p>
+              <span class="icon-price-ribbon"></span>
+              <b>New Reference ID</b> 
+              <div id="reference_ID" class="w3-xlarge"></div></b>
+            </p><br/>
+
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+            <footer> 
+              <div class="w3-padding">
+                <div><b>Please ensure that you click this button to generate only one tracking and reference code per transaction.<br/> Once you generate this, you can continue with filling and setting new shipment details and then save.</b></div><br/>
+
+                <p id="gen_code">
+                  <button type="button" class="wow bounceInDown btn btn-primary" id="code_generate"><!-- data-toggle="modal" data-target="#updateUserAccountModal"-->
+                    <b>Generate Code</b>
+                  </button><br/>
+                </p>
+
+                <p id="details_set">
+                  <button type="button" class="wow bounceInDown btn btn-primary" id="set_details"><!-- data-toggle="modal" data-target="#updateUserAccountModal"-->
+                    <b>Set Details</b>
+                  </button><br/>
+                </p>
+
+                <div id="errorMessage"></div>
+
+              </div>
+            </footer><br/>
+          </div>
+        </div>
+        <br/><br/><br/>
+
+
+        <div class="wow fadeInUp col-md-4 w3-card-4 w3-center w3-padding">
+          <b class="w3-xxlarge">Save New Details here</b><br/>
+            <b>New details will be saved to database and made available to users when queried in shipment tracking...</b><br/><br/>
+          <p class="w3-medium w3-padding w3-border-right w3-border-left w3-border-top w3-border-bottom w3-round-xxlarge">
+            <span class="wow fadeInX">Set new Shipping values here.</span> <br/><span class="wow fadeInY"></span>
+          </p>
+
+          <b>Track : <p id="tracking_code_to_save"></p></b>
+          <br/>
+
+          <b>Ref : <p id="reference_code_to_save"></p></b>
+          <br/>
+
+          <form>
+          <div id="form_content">
+            <p> 
+              <span class="icon-calendar"></span>
+              <b class="w3-large">Shipment Day</b>
+              <input type="number" name="shipmentDay" class="form-control required" id="shipmentDay" data-msg="Cannot be empty" />
+              <div class="validation w3-text-red"></div>
+            </p><br/>
+            <div class="w3-border-bottom"></div>
+            <br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Shipment Month</b> 
+            <input type="number" name="shipmentMonth" class="form-control required" id="shipmentMonth" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Shipment Year</b> 
+            <input type="number" name="shipmentYear" class="form-control required" id="shipmentYear" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+
+          <p>
+            <span class="icon-clock"></span>
+            <b class="w3-large">Shipment Hour</b> 
+            <input type="number" name="shipmentHour" class="form-control required" id="shipmentHour" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div id="w3-border-bottom"></div>
+          <br/>
+
+          <p>
+            <span class="icon-clock"></span>
+            <b class="w3-large">Shipment Minute</b> 
+            <input type="number" name="shipmentMinute" class="form-control required" id="shipmentMinute" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-clock"></span>
+            <b class="w3-large">Shipment Second</b> 
+            <input type="number" name="shipmentSecond" class="form-control required" id="shipmentSecond" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Delivery Day</b> 
+            <input type="number" name="deliveryDay" class="form-control required" id="deliveryDay" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/><br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Delivery Month</b> 
+            <input type="number" name="deliveryMonth" class="form-control required" id="deliveryMonth" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-calendar"></span>
+            <b class="w3-large">Delivery Year</b> 
+            <input type="number" name="deliveryYear" class="form-control required" id="deliveryYear" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-pencil"></span>
+            <b class="w3-large">Shipper's Full Name</b> 
+             <input type="text" name="shiperFullName" class="form-control required" id="shiperFullName" data-msg="Cannot be empty" />
+             <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-location"></span>
+            <b class="w3-large">Shipper's Address</b> 
+            <textarea type="text" name="shiperAddress" class="form-control required" id="shiperAddress" data-msg="Cannot be empty"></textarea>
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-pencil"></span>
+            <b class="w3-large">Receiver's Full Name</b> 
+            <input type="text" name="receiverFullName" class="form-control required" id="receiverFullName" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-location"></span>
+            <b class="w3-large">Receiver's Address</b> 
+            <textarea type="text" name="receiverAddress" class="form-control required" id="receiverAddress" data-msg="Cannot be empty"></textarea>
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-price-ribbon"></span>
+            <b class="w3-large">Price</b> 
+           <input type="number" name="price" class="form-control required" id="price" data-msg="Cannot be empty" />
+           <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-notification"></span>
+            <b class="w3-large">Status<br/>
+              <span class="w3-medium">(Could be Processing, PickUp, In-Transit <br/>or On-hold)</span>
+            </b> 
+            <input type="text" name="status" class="form-control required" id="status" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Commodity</b> 
+            <input type="text" name="commodity" class="form-control required" id="commodity" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Commodity Types</b> 
+            <input type="text" name="commodityTypes" class="form-control required" id="commodityTypes" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Commodity Quantity</b> 
+            <input type="number" name="commodityQuantity" class="form-control required" id="commodityQuantity" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Commodity Content</b> 
+            <textarea type="number" name="commodityContent" class="form-control required" id="commodityContent" data-msg="Cannot be empty"></textarea>
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-location2"></span>
+            <b class="w3-large">Destination</b> 
+            <input type="text" name="destination" class="form-control required" id="destination" data-msg="Cannot be empty" />
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-location2"></span>
+            <b class="w3-large">Origin</b>
+            <input type="text" name="origin" class="form-control required" id="origin" data-msg="Cannot be empty" /> 
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+           <p>
+            <span class="icon-location2"></span>
+            <b class="w3-large">Port Origin</b> 
+            <input type="text" name="portOrigin" class="form-control" id="portOrigin" data-msg="Cannot be empty" /> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+           <p>
+            <span class="icon-hand"></span>
+            <b class="w3-large">Mode</b> 
+            <input type="text" name="mode" class="form-control required" id="mode" data-msg="Cannot be empty" /> 
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+           <p>
+            <span class="icon-anchor"></span>
+            <b class="w3-large">Weight(kgs)</b> 
+            <input type="number" name="weight_kgs" class="form-control required" id="weight_kgs" data-msg="Cannot be empty" /> 
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-anchor"></span>
+            <b class="w3-large">Weight(cubic)</b> 
+            <input type="number" name="weight_cubic" class="form-control" id="weight_cubic" data-msg="Cannot be empty" /> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Allocation</b>
+            <input type="text" name="allocation" class="form-control" id="allocation" data-msg="Cannot be empty" /> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-hotairballoon"></span>
+            <b class="w3-large">Service Type</b>
+            <input type="text" name="service_type required" class="form-control" id="service_type" data-msg="Cannot be empty" /> 
+            <div class="validation w3-text-red"></div>
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+           <p>
+            <span class="icon-box"></span>
+            <b class="w3-large">Size Type</b> 
+            <input type="text" name="size_type" class="form-control" id="size_type" data-msg="Cannot be empty" /> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+          <p>
+            <span class="icon-pencil"></span>
+            <b class="w3-large">Shipment Travel History</b> 
+            <textarea type="text" name="shipmentTravelHistory" class="form-control" id="shipmentTravelHistory" data-msg="Cannot be empty">
+            </textarea> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+
+           <p>
+            <span class="icon-pencil"></span>
+            <b class="w3-large">Additional Information</b> 
+            <textarea type="text" name="add_info" class="form-control" id="add_info" data-msg="Cannot be empty">
+            </textarea> 
+            <!--<div id="validation"></div>-->
+          </p><br/>
+
+          <div class="w3-border-bottom"></div>
+          <br/>
+          <br/>
+        </div>
+        </form>
+
+          <div class="">
+            <p><b>Please, ensure you have generated the tracking pin and reference code before saving shipment details</b></p>
+            <button class="btn btn-primary" id="saveNewDetails"><b>Save</b></button><br/>
+
+          </div><br/>
+          
+          <div class="w3-large"><span class="icon-save"></span>
+            <div class="w3-text-green" id="saveDataConfirm"></div>
+            <div class="w3-text-red" id="saveErrorConfirm"></div>
+          </div>
+
+          <br/><br/>
+      </div>
+      <br/>
+
+
+
+        <div class="wow fadeInUp col-md-4 w3-border-right">
+            <div class="container w3-card w3-center w3-padding">  
+                <header class="w3-border-bottom w3-padding">
+                  <b class="w3-xxlarge">View All Tracking and Reference Code: </b><br/>
+                  <b>View previously saved Tracking and Reference Codes</b>
+                </header>
+                <br/><br/><br/>
+
+                <p>
+                  <button class="btn btn-primary" id="viewTrackRefBtn">
+                    <span class="icon-eye"></span>
+                    <b>View All</b>
+                  </button>
+                  <br/>
+
+                  <div id="track_ref">
+
+                    <div id="" class="col-md-6">
+                      <b>TRACKING <br/>CODES:</b>
+                      <div class="w3-border-bottom"></div><br/>
+                      <p class="w3-center w3-padding" id="tracking_codes"></p>
+                    </div>
+
+                    <div id="" class="col-md-6">
+                      <b>REFERENCE <br/>CODES:</b>
+                      <div class="w3-border-bottom"></div><br/>
+                      <p class="w3-center w3-padding" id="reference_codes"></p>
+                    </div>
+
+                  </div>
+
+                </p><br/>
+
+                <div id="errorTrackRef"></div>
+                
+                <br/>
+                
+                <br/><br/><br/>
+
+            </div>
+        </div>
+
+        <div>
+          <div class="col-md-6"></div>
+
+          <div class="col-md-12 w3-center w3-border-right w3-border-bottom w3-padding">
+            <br/><br/><br/>
+
+           <div class="wow bounceInUp container w3-card w3-center w3-padding margin">  
+                <header class="w3-border-bottom w3-center"><br/><br/>
+                  <b class="w3-xlarge">Search for specific shipment Details associated with the supplied tracking or reference code <br/> and Update their status and prices </b><br/><br/>
+                </header>
+                <br/><br/><br/>
+               <input type="text" name="track_ref_code" class="form-control" id="track_ref_code_search" placeholder="Shipment Tracking or Reference Code" data-msg="Cannot be empty" /><br/>
+
+               <!--<input type="text" name="reference_code" class="form-control" id="reference_code_search" placeholder="Shipment Reference Code" data-msg="Cannot be empty" /><br/>-->
+
+              <div class="empty_error w3-text-red"></div>
+
+              <button type="button" class="wow fadeIn btn btn-primary" id="search_update_btn" data-toggle="modal" data-target="#searchAndUpdateModal">
+                Search Details
+              </button>
+              <b><div class="w3-text-red" id="search_error"></div></b>
+              <b><div class="w3-text-green" id="search_success"></div></b>
+              <br/><br/>
+              </p><br/>
+            </div>
+
+                <!-- This modal will pop up when deposit transaction is clicked-->
+                <!-- Modal -->
+                <div class="modal" id="searchAndUpdateModal"><!--tabindex="-1" role="dialog" aria-labelledby="action" aria-hidden="true">-->
+                  <div class="modal-dialog" role="document"> <!--role="document"-->
+
+                    <div class="modal-content">
+
+                      <div class="modal-header w3-deep-purple">
+                        <br/>
+
+                        <div class="modal-title w3-large w3-center" id="exampleModalLabel">
+
+                          <b>Shipment Details associated with <br/>supplied tracking code.</b>
+                          <br/>
+                          <p class="w3-center">
+                            N.B. - You can only update the shipment price and status of the commodity after creation.
+                          </p>
+
+                        </div>
+                        <br/>
+
+                      </div>
+
+                        
+                      <div class="modal-body w3-container w3-center" id="depositHistory"> 
+                        <br/>
+                        <b><div class="w3-text-red w3-large" id="search_error"></div></b>
+                        <b><div class="w3-text-green w3-large" id="search_success"></div></b>
+                        <br/><br/>
+
+                        <div class="w3-padding" id="shipmentContents"></div>
+
+                        <div class="spinner-border text-success" id= "loadingShipmentIcon" role="status">
+                          <span class="sr-only">Loading...</span>
+                        </div> 
+
+                      </div><br/><br/>
+
+                    <form id="updateForm">
+
+                      <div class="w3-card-4 w3-padding w3-border w3-round-xxlarge" id="detail_update">
+
+                        <div class="w3-large">
+                          <b>Update/Change Status and Price data of this Shipment</b>
+                        </div><br/><br/>
+
+                        <input type="text" name="Status" class="form-control required" id="statusUpdate" placeholder="New Status (Either Processing, PickUp, In-Transit or On-hold)" data-msg="Cannot be empty" />
+                        <div class="w3-text-red" id="statusState"></div>
+                        <br/><br/>
+
+                        <input type="number" name="Price" class="form-control required" id="priceUpdate" placeholder="New Price" data-msg="Cannot be empty" />
+                        <div class="w3-text-red" id="priceState"></div>
+                        <br/><br/>
+
+                        <button type="button" class="btn btn-primary" id="updateStatus_Price">Update</button>
+
+                        <b><div class="w3-text-red" id="updateError"></div></b>
+                        <b><div class="w3-text-green" id="updateSuccess"></div></b>
+                        <br/><br/>
+
+                      </div>
+
+                    </form>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            <p class="w3-border-bottom"></p>
+          </div>
+
+          <div class="col-md-12 w3-center">
+
+            
+
+            <br/><br/>
+
+            <div>
+
+              <button class="w3-left btn btn-primary" id="quote_click" data-toggle="modal" data-target="#set_quote_and_payment">
+                <b>Set Quotes and Payment Details <span class="icon-pricetags"></span></b>
+              </button>
+
+              <button type="button" class="btn btn-primary" id="logOut"><b>Logout</b></button>
+
+            </div>
+            
+
+          </div><br/><br/><br/><br/><br/><br/>
+    </div>
+    </div>
+  </section>
+  </main>
+
+  <!--==========================
+      Footer
+    ============================-->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3><span class="w3-myfont">Emidex</span><span class="icon-flight"></span></h3>
+              <p>
+                <span class="w3-myfont w3-medium">
+                  The future belongs to a logistically savvy generation, that's why we are here!<br/>With the need for highly efficient freight transportation and tracking on the rise, and the need for agile and apt implementations of smooth delivery platforms, we envision a world with high and seamless haulage index and a logistics inclusion for everyone - not only for the corporate and big businesses, but also for individuals and small businesses alike. <br/>Hence, we intend to position ourselves as a key player in the transportation industry as the world evolves.
+                </span>
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+            <h4><span class="w3-myfont">Useful Links</span></h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#about">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#services ">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#skills">Skills</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="news.html">News</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#quotes">Get Quotes</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="index.html#track">Track Shipment</a></li>
+
+              <li><i class="ion-ios-arrow-right"></i> <a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+          </div>
+
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contact Us</h4>
+              <ul class="probootstrap-contact-info">
+                <a href="mailto:info@emidexlogservices">
+                  <li><i class="icon-mail"></i><span class="w3-text-white">info@emidexlogservices.com</span></li>
+                </a>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="copyright">
+          @2020. All Rights Reserved. <br/>Designed & Developed by <br/><b>Emidex Logistics Services Ltd..</b><br/>
+        </div>
+      </div>
+
+    </footer><!-- #footer -->
+
+    <a href="#" class="w3-display-bottomright back-to-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+
+    <!--Page Manager-->
+    <script src="js/custom/pageManager.js"></script>
+    <script type="text/javascript" src="js/custom/loginDashboard.js"></script>
+    <script type="text/javascript" src="js/custom/getAndSetParamDetails.js"></script>
+    <script type="text/javascript" src="js/custom/getAndSetQuoteParams.js"></script>
+
+    <!--<script src="js/custom/test.js"></script>-->
+    <!-- Contact Form JavaScript File -->
+    <!--<script src="contactform/contactform.js"></script>-->
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+
+  </body>
+  </html>
